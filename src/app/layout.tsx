@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import TopNavBar from './_components/top-navigation-bar';
+import Footer from './_components/footer';
 
 export const metadata = {
   title: 'Jez Pie - Software Engineering Portfolio',
@@ -24,6 +25,7 @@ export default function RootLayout({
           <TopNavBar />
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );
