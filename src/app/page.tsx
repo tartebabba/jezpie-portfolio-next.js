@@ -1,15 +1,15 @@
-import Link from "next/link";
-
+import Link from 'next/link';
+import AboutMe from './_components/about-me';
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
+    <main className="flex flex-col items-center justify-center min-h-screen">
+      {/* <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
         <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
           Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
         </h1>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
           <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+            className="flex flex-col max-w-xs gap-4 p-4 text-white rounded-xl bg-white/10 hover:bg-white/20"
             href="https://create.t3.gg/en/usage/first-steps"
             target="_blank"
           >
@@ -20,7 +20,7 @@ export default function HomePage() {
             </div>
           </Link>
           <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+            className="flex flex-col max-w-xs gap-4 p-4 text-white rounded-xl bg-white/10 hover:bg-white/20"
             href="https://create.t3.gg/en/introduction"
             target="_blank"
           >
@@ -31,7 +31,10 @@ export default function HomePage() {
             </div>
           </Link>
         </div>
-      </div>
+      </div> */}
+      <section className="flex flex-col items-center mb-12 border gap-x-12 xl:flex-row">
+        <AboutMe />
+      </section>
     </main>
   );
 }
