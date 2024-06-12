@@ -32,7 +32,7 @@ export default function HomePage() {
           </Link>
         </div>
       </div> */}
-      <section className="flex flex-col items-center mb-12 border gap-x-12 xl:flex-row">
+      <section className="flex flex-col items-center mb-12 gap-x-12 xl:flex-row">
         <AboutMe />
       </section>
     </main>

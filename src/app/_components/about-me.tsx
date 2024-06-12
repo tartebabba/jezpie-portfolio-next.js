@@ -15,7 +15,13 @@ export default function AboutMe() {
       <h2 className="my-2 font-semibold tracking-wide">
         Always Curious, Forever Hungry.
       </h2>
-      <p className="pt-10 text-lg leading-7 text-slate-600 dark:text-slate-300">
+      <h3 className="pt-10 text-lg leading-7 text-slate-700 dark:text-slate-300">
+        Yorkshire-based Software Engineer with a focus on developing impactful
+        products. I used to shape products and teams with data and business
+        insights; now I build them with code too. Always eager to learn, build,
+        and solve problems.
+      </h3>
+      <p className="pt-10 text-lg leading-7 text-slate-700 dark:text-slate-300">
         This is my little slice of the internet to show my journey of building
         software in public, where I share my projects, progress, and the lessons
         learned along the way - all{' '}
@@ -29,7 +35,6 @@ export default function AboutMe() {
         >
           out in the open&nbsp;
         </RoughNotation>
-        {''}
         for you to see and enjoy!
       </p>
     </div>
