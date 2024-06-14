@@ -4,9 +4,9 @@ import {
   ExternalLinkIcon,
   GitHubLogoIcon,
 } from '@radix-ui/react-icons';
-import projects from '../projects/project-details';
-import Tags from './tags';
-import CardTopBorderFlex from './card-top-border-flex';
+import projects from './project-details';
+import Tags from '../_components/tags';
+import CardTopBorderFlex from '../_components/card-top-border-flex';
 
 // array of project details, id, name, github, description, image, website link and tags
 
