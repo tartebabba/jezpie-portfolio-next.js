@@ -6,6 +6,7 @@ import {
 } from '@radix-ui/react-icons';
 import projects from '../projects/project-details';
 import Tags from './tags';
+import CardTopBorderFlex from './card-top-border-flex';
 
 // array of project details, id, name, github, description, image, website link and tags
 
@@ -48,11 +49,11 @@ export default function ProjectCards() {
           </div>
           <h2 className="text-3xl font-bold">{project.name}</h2>
           <p className="my-2 text-slate-600">{project.description}</p>
-          <div className="flex flex-wrap border-t py-2">
+          <CardTopBorderFlex>
             {project.tags.map((tag) => (
               <Tags key={tag} tag={tag} />
             ))}
-          </div>
+          </CardTopBorderFlex>
         </div>
       ))}
     </div>
