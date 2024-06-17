@@ -5,8 +5,7 @@ export default function Footer() {
     'mx-2 font-bold link-underline hover:font-bold hover:text-[hsl(280,100%,70%)]';
 
   return (
-    <footer>
-      <div className="border-t"></div>
+    <footer className='mt-auto border-t'>
       <div className="flex items-center justify-between m-2 mb-5">
         <div className="">
           <div className="mx-1 text-sm">
