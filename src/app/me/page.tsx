@@ -2,17 +2,20 @@ import Link from 'next/link';
 import QuestionsComponents from './questions';
 
 import Tagline from '../_components/tagline';
+import ContainerTopBorder from '../_components/container-top-border';
 
 export default function HomePage() {
   return (
     <main className="mb-12 flex w-full flex-col gap-x-12 xl:flex-row xl:content-evenly">
-      <section className="flex-col items-center justify-center gap-x-12 border-b border-b-black pb-4 dark:border-b-slate-50">
+      <section className="flex-col items-center justify-center gap-x-12">
         <img
           src="https://media.licdn.com/dms/image/C4E03AQG-u8i1WZ6xrQ/profile-displayphoto-shrink_800_800/0/1594991389365?e=1723680000&v=beta&t=7mlN1UiwKAXMjHylkra5HQ9bFhXDPIexGi-AwlM-ZTY"
           alt="Jez"
-          className="m-2 rounded-full xl:h-2/5 xl:w-full"
+          className="mb-8 aspect-square w-full rounded-full border xl:object-fill"
         />
-        <Tagline />
+        <ContainerTopBorder>
+          <Tagline />
+        </ContainerTopBorder>
       </section>
       <div>
         <section className="my-4">
