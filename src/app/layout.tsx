@@ -21,7 +21,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="flex h-screen flex-col justify-between">
+      <body className="flex h-screen flex-col justify-between dark:bg-slate-950 dark:text-slate-50">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
           <TopNavBar />
           {children}

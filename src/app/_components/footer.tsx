@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   const linkStyles =
-    'mx-2 font-bold link-underline hover:font-bold hover:text-[hsl(280,100%,70%)]';
+    'mx-2 font-bold link-underline hover:text-[hsl(280,100%,70%)]';
 
   return (
     <footer className='mt-auto border-t'>

@@ -1,30 +1,33 @@
 'use client';
 import { RoughNotation } from 'react-rough-notation';
+import Tagline from './tagline';
+import Link from 'next/link';
 
 export default function AboutMe() {
   'use client';
 
   return (
     <div className="pt-6">
-      <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-        Hi, I'm <span className="text-[#DE1D8D]">Jez</span>
+      <h1 className="md:leading-14 pb-6 text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl">
+        Hi, I'm{' '}
+        <Link
+          href="https://www.linkedin.com/in/jezpiedad/"
+          className="text-[#DE1D8D]"
+        >
+          Jez
+        </Link>
       </h1>
-      <h2 className="font-bold tracking-widest">
-        Full-Stack Software Engineer | Builder | Tinkerer
-      </h2>
-      <h2 className="my-2 font-semibold tracking-wide">
-        Always Curious, Forever Hungry.
-      </h2>
-      <h3 className="pt-10 text-lg leading-7 text-slate-700 dark:text-slate-300">
+      <Tagline />
+      <h3 className="pt-10 text-lg leading-7">
         Yorkshire-based Software Engineer with a focus on developing impactful
         products. I used to shape products and teams with data and business
         insights; now I build them with code too. Always eager to learn, build,
         and solve problems.
       </h3>
-      <p className="pt-10 text-lg leading-7 text-slate-700 dark:text-slate-300">
-        This is my little slice of the internet to show my journey of building
-        software in public, where I share my projects, progress, and the lessons
-        learned along the way - all{' '}
+      <p className="pt-10 text-lg leading-7">
+        This is my little slice of the internet to show my journey of learning
+        and building software in public, where I share my projects, progress,
+        and the lessons learned along the way - all{' '}
         <RoughNotation
           animate={true}
           type="box"

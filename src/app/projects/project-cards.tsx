@@ -16,7 +16,7 @@ export default function ProjectCards() {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="border-grey-300 m-4 rounded-md border-2 p-3"
+          className="m-4 rounded-lg border-2 border-gray-300 p-3 dark:border-gray-600"
         >
           <img
             src={project.image}
@@ -47,8 +47,10 @@ export default function ProjectCards() {
               </a>
             </div>
           </div>
-          <h2 className="text-3xl font-bold">{project.name}</h2>
-          <p className="my-2 text-slate-600">{project.description}</p>
+          <h2 className="text-3xl font-bold hover:text-[hsl(280,100%,70%)]">
+            {project.name}
+          </h2>
+          <p className="my-2">{project.description}</p>
           <CardTopBorderFlex>
             {project.tags.map((tag) => (
               <Tags key={tag} tag={tag} />
