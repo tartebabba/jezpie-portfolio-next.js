@@ -2,9 +2,11 @@
 import { RoughNotation } from 'react-rough-notation';
 import Tagline from './tagline';
 import Link from 'next/link';
+import ContainerTopBorder from './container-top-border';
 
 export default function AboutMe() {
   'use client';
+  const linkStyles = 'mr-2 font-bold hover:text-[hsl(280,100%,70%)]';
 
   return (
     <div className="pt-6">
@@ -16,9 +18,10 @@ export default function AboutMe() {
         >
           Jez
         </Link>
+        .
       </h1>
       <Tagline />
-      <h3 className="pt-10 text-lg leading-7">
+      <h3 className="pt-5 text-lg leading-7">
         Yorkshire-based Software Engineer with a focus on developing impactful
         products. I used to shape products and teams with data and business
         insights; now I build them with code too. Always eager to learn, build,
@@ -40,6 +43,17 @@ export default function AboutMe() {
         </RoughNotation>
         for you to see and enjoy!
       </p>
+      <div className="my-2 text-right">
+        <Link href="https://github.com/tartebabba" className={linkStyles}>
+          → GitHub.
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/jezpiedad/"
+          className={linkStyles}
+        >
+          → LinkedIn.
+        </Link>
+      </div>
     </div>
   );
 }
