@@ -1,9 +1,9 @@
-import ProjectCards from '../projects/project-cards';
-import ContainerTopBorder from './container-top-border';
+import ProjectCards from './project-cards';
+import ContainerTopBorder from '../_components/container-top-border';
 
 export default function Projects() {
   return (
-    <div className="mb-12 flex w-full flex-col gap-x-12 xl:flex-row xl:content-evenly">
+    <main className="mb-12 flex w-full flex-col gap-x-12 xl:flex-row xl:content-evenly">
       <div className="my-1 pt-4">
         <h1 className="md:leading-14 pb-6 text-2xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl">
           My Projects
@@ -16,6 +16,6 @@ export default function Projects() {
         </ContainerTopBorder>
       </div>
       <ProjectCards />
-    </div>
+    </main>
   );
 }

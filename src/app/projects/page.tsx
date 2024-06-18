@@ -1,7 +1,7 @@
-import Projects from '../_components/projects';
+import Projects from './projects';
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col items-center min-h-screen ">
+    <main className="flex min-h-screen flex-col items-center">
       <Projects />
     </main>
   );
