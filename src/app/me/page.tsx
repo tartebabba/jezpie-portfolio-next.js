@@ -4,15 +4,16 @@ import QuestionsComponents from './questions';
 import Tagline from '../_components/tagline';
 import ContainerTopBorder from '../_components/container-top-border';
 import Image from 'next/image';
+import jez from '../../../public/jez.jpg';
 
 export default function HomePage() {
   return (
     <main className="mb-12 flex w-full flex-col gap-x-12 xl:flex-row xl:content-evenly">
       <section className="flex flex-col items-center">
         <Image
-          src="https://media.licdn.com/dms/image/C4E03AQG-u8i1WZ6xrQ/profile-displayphoto-shrink_800_800/0/1594991389365?e=1723680000&v=beta&t=7mlN1UiwKAXMjHylkra5HQ9bFhXDPIexGi-AwlM-ZTY"
+          src={jez}
           alt="Jez"
-          className="mb-8 aspect-square w-2/5 rounded-full xl:h-auto xl:w-auto xl:object-fill"
+          className="mb-8 aspect-square w-2/5 overflow-hidden rounded-full object-cover xl:h-auto xl:w-4/5"
         />
         <ContainerTopBorder>
           <Tagline center={true} />
