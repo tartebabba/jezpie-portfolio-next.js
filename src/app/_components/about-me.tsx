@@ -2,7 +2,7 @@
 import { RoughNotation } from 'react-rough-notation';
 import Tagline from './tagline';
 import Link from 'next/link';
-import ContainerTopBorder from './container-top-border';
+
 
 export default function AboutMe() {
   'use client';
@@ -11,7 +11,7 @@ export default function AboutMe() {
   return (
     <div className="pt-6">
       <h1 className="md:leading-14 pb-6 text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl">
-        Hi, I'm{' '}
+        Hi, I&apos;m{' '}
         <Link
           href="https://www.linkedin.com/in/jezpiedad/"
           className="text-[#DE1D8D]"

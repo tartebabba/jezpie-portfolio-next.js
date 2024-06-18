@@ -10,7 +10,7 @@ export default function Projects() {
         </h1>
         <ContainerTopBorder>
           <p className="my-4 text-lg">
-            Here's a list of projects i'm currently working on or have
+            Here&apos;s a list of projects i&apos;m currently working on or have
             previously built.
           </p>
         </ContainerTopBorder>

@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 import { headerNavLinks } from '~/_configs/header-nav-links';
 
 export default function TopNavBar() {
-  const pathname = usePathname() as string;
+  const pathname = usePathname();
 
   return (
     <header className="items-center justify-between py-10 md:flex">

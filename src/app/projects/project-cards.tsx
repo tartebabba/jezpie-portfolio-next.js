@@ -7,6 +7,7 @@ import {
 import projects from './project-details';
 import Tags from '../_components/tags';
 import CardTopBorderFlex from '../_components/card-top-border-flex';
+import Image from 'next/image';
 
 // array of project details, id, name, github, description, image, website link and tags
 
@@ -18,7 +19,7 @@ export default function ProjectCards() {
           key={project.id}
           className="m-4 rounded-lg border-2 border-gray-300 p-3 dark:border-gray-600"
         >
-          <img
+          <Image
             src={project.image}
             alt={project.name}
             className="aspect-video w-full rounded-lg object-cover"

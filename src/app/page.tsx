@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import AboutMe from './_components/about-me';
 export default function HomePage() {
   return (
