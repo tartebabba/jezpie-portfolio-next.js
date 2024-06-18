@@ -41,7 +41,7 @@ export default function HomePage() {
           </p>
           <p className="py-1">Geneticist turned Software Engineer.</p>
           <p className="py-1">
-            I use to help build start-ups and products with data and business
+            I used to help build start-ups and products with data and business
             insights. Now I build them with code too.
           </p>
           <p className="py-1">
