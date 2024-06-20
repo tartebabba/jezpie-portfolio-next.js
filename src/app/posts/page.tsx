@@ -5,16 +5,21 @@ export default async function PostsPage() {
   const posts = await getBlogs();
 
   return (
-    <div>
-      <h1>Posts</h1>
-      <p>Coming soon...</p>
+    <div className="">
+      <h1 className="text-3xl font-bold">Posts</h1>
+      <p>Here are </p>
       {posts.map((post, index) => (
-        <article key={index}>
-          <h2>{post.frontmatter.title}</h2>
-          <p>{post.frontmatter.author}</p>
-          <p>{post.frontmatter.publishDate}</p>
-          <Link href={`/posts/${post.slug}`}>Read more</Link>
-        </article>
+        <Link href={`/posts/${post.slug}`}>
+          <div className="border-b border-gray-300">
+            <article
+              key={index}
+              className="flex cursor-pointer flex-row justify-between rounded-md p-2 text-slate-500 duration-200 ease-in-out hover:bg-gray-100 hover:text-slate-800"
+            >
+              <h2 className="font-bold">{post.frontmatter.title}</h2>
+              <p>{post.frontmatter.publishDate}</p>
+            </article>
+          </div>
+        </Link>
       ))}
     </div>
   );
