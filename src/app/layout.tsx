@@ -24,7 +24,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </head>
       <body className="flex h-screen flex-col justify-between dark:bg-slate-950 dark:text-slate-50">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+        <div className="mx-auto w-[80%] px-4 xl:w-[60%]">
           <TopNavBar />
           {children}
         </div>

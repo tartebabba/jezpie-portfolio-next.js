@@ -13,7 +13,6 @@ export default async function PostPage({
 
   return (
     <div>
-      <h1>Post</h1>
       <article className="prose dark:prose-invert">{post.content}</article>
     </div>
   );
