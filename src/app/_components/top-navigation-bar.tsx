@@ -5,12 +5,10 @@ import Typewriter from 'typewriter-effect';
 import { headerNavLinks } from '~/_configs/header-nav-links';
 
 export default function TopNavBar() {
+  const pathname = usePathname();
+  const displayPathname = pathname.startsWith('/posts/') ? '/posts' : pathname;
 
-  const pathname = usePathname().startsWith('/posts/')
-    ? '/posts'
-    : usePathname();
-
-  console.log(pathname);
+  console.log(displayPathname);
 
   return (
     <header className="items-center justify-between py-10 md:flex">
@@ -18,7 +16,9 @@ export default function TopNavBar() {
         <Link href="/" className="passHref text-2xl font-bold">
           <Typewriter
             options={{
-              strings: [`~${pathname !== '/' ? pathname : 'hello! '} `],
+              strings: [
+                `~${displayPathname !== '/' ? displayPathname : 'hello! '} `,
+              ],
               autoStart: true,
               loop: true,
               deleteSpeed: 10000,
